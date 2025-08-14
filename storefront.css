@@ -1,0 +1,114 @@
+/* ========== Base page reset ========== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: #f2f2f2;           
+  font-family: Arial, Helvetica, sans-serif;  
+  color: #222;
+}
+
+/* Limit content width and center */
+main, header .wrap, footer .wrap, nav {
+  max-width: 960px;              
+  margin: 0 auto;                
+  padding: 0 16px;
+}
+
+/* Sections */
+section {
+  background: #fff;              
+  padding: 20px;                
+  margin: 24px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+  transition: transform 0.3s ease;       
+}
+
+/* Section hover zoom */
+section:hover {
+  transform: scale(1.02);        
+}
+
+/* Header visual */
+header {
+  padding: 24px 0 12px;
+}
+header h1 {
+  margin: 0;
+}
+header .tag {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+/* ========== Nav menu ========== */
+nav .menu {
+  list-style: none;            
+  margin: 0;                    
+  padding: 0;                   
+  display: flex;                
+  justify-content: center;      
+  gap: 0;                       
+}
+
+nav .menu li {
+  margin: 0 15px;               
+}
+
+nav .menu a {
+  display: block;               
+  text-decoration: none;        
+  color: #fff;                 
+  background: #333;            
+  padding: 12px 20px;         
+  border-radius: 4px;          
+  transition: background-color 0.3s;  
+}
+
+nav .menu a:hover {
+  background: #555;          
+}
+
+/* ========== Table ========== */
+table {
+  width: 100%;                
+  border-collapse: collapse;   
+  background: #fff;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin: 8px 0 12px;
+}
+
+thead th {
+  background: #444;           
+  color: #fff;              
+}
+
+th, td {
+  border: 1px solid #ccc;     
+  padding: 12px;             
+  text-align: left;           
+  vertical-align: top;
+}
+
+/* Footer row */
+tfoot td {
+  text-align: center;          
+  font-style: italic;           
+  border-top: 2px solid #ccc;  
+}
+
+/* colgroup background for 1st & 3rd columns */
+col.col-1 { background: #f9f9f9; }
+col.col-3 { background: #f9f9f9; }
+
+/* Footer area */
+footer {
+  margin: 32px 0 48px;
+  color: #666;
+  text-align: center;
+}
