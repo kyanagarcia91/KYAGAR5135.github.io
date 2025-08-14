@@ -37,25 +37,99 @@
     <section id="projects">
       <h2>Projects</h2>
 
-:root{
-  --brand: #0a6;                 
-  --ink: #222;
-  --muted: #666;
-  --table-border: #bbb;
-  --thead-bg: #00d4d4;         
-  --col-1-bg: #ffef6a;           
-  --col-3-bg: #f3f7ff;           
-  --card-zoom: 1.02;
-  --ease: 200ms ease;
-}
-      
-nav a{
-  transition: background-color var(--ease), color var(--ease);
-}
-nav a:hover{
-  background-color: var(--brand);
-  color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Portfolio and project homepage for Kyana Garcia." />
+  <meta name="keywords" content="portfolio, web development, projects, contact, Kyana Garcia" />
+  <meta name="author" content="Kyana Garcia" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Kyana's Portfolio</title>
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with welcome message -->
+  <header>
+    <h1>Welcome to My Web Portfolio!</h1>
+  </header>
+
+  <!-- Navigation menu -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- About section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>Hello! My name is Kyana Garcia. I am currently studying web development and excited to finally be building new things on the web!</p>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Project table -->
+      <table>
+        <caption>Sample Projects</caption>
+
+        <!-- Color specific columns -->
+        <colgroup>
+          <col class="col-1">
+          <col>
+          <col class="col-3">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Description</th>
+            <th scope="col">Preview</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Weather Dash</th>
+            <td>A small dashboard that fetches current conditions and a 5-day forecast for your city.</td>
+            <td><div class="img-placeholder">160×100</div></td>
+          </tr>
+          <tr>
+            <th scope="row">Task Tracker</th>
+            <td>Kanban-style task board with drag-and-drop and local storage for persistence.</td>
+            <td><div class="img-placeholder">160×100</div></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">More projects coming soon—stay tuned!</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:kyagar5135@students.ecpi.edu">kyagar5135@students.ecpi.edu</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Kyana Garcia. All rights reserved.
+  </footer>
+</body>
+</html>
 
 /* (C) Main sections: */
 main section{
