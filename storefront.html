@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Simple storefront demo page." />
+  <title>Kyana’s Corner</title>
+
+  <!-- Link the stylesheet (Task 2) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER (Task 1) -->
+  <header>
+    <div class="wrap">
+      <h1>Kyana’s Corner</h1>
+      <p class="tag">Student ID: <strong>KYAGAR5135</strong></p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav aria-label="Primary">
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="home">
+    <!-- Products section w/ descriptive heading -->
+    <section id="products" aria-labelledby="products-title">
+      <h2 id="products-title">Featured Products</h2>
+
+      <!-- PRODUCT TABLE -->
+      <table aria-describedby="products-title">
+        <caption>Store Inventory</caption>
+
+        <!-- Color the 1st & 3rd columns via CSS -->
+        <colgroup>
+          <col class="col-1">
+          <col>
+          <col class="col-3">
+          <col>
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Canvas Tote</th>
+            <td>$24.99</td>
+            <td>Bags</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <th scope="row">Insulated Bottle</th>
+            <td>$18.50</td>
+            <td>Drinkware</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <th scope="row">Graphic Tee</th>
+            <td>$16.00</td>
+            <td>Apparel</td>
+            <td>Back-ordered</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">Total items listed: 3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Questions? Email <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER (Task 1) -->
+  <footer>
+    <div class="wrap">© <span id="year"></span> Kyana’s Corner. All rights reserved.</div>
+  </footer>
+
+  <script>
+   
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
