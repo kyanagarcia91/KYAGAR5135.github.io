@@ -36,7 +36,105 @@
     <!-- Projects section -->
     <section id="projects">
       <h2>Projects</h2>
-      <p>Check back later for examples of my web projects and coursework.</p>
+
+:root{
+  --brand: #0a6;                 
+  --ink: #222;
+  --muted: #666;
+  --table-border: #bbb;
+  --thead-bg: #00d4d4;         
+  --col-1-bg: #ffef6a;           
+  --col-3-bg: #f3f7ff;           
+  --card-zoom: 1.02;
+  --ease: 200ms ease;
+}
+      
+nav a{
+  transition: background-color var(--ease), color var(--ease);
+}
+nav a:hover{
+  background-color: var(--brand);
+  color: #fff;
+}
+
+/* (C) Main sections: */
+main section{
+  transition: transform var(--ease), box-shadow var(--ease);
+  will-change: transform;
+}
+main section:hover{
+  transform: scale(var(--card-zoom));
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+/* (D) Table base styling */
+#projects table{
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--table-border);
+  background: #fff;
+  margin-block: 12px 24px;
+}
+#projects caption{
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+#projects thead{
+  background: var(--thead-bg);
+  color: #00323a;
+}
+#projects th,
+#projects td{
+  border: 1px solid var(--table-border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+/* First column is the project name (bold) */
+#projects tbody th[scope="row"]{
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#projects col.col-1{ background: var(--col-1-bg); }
+#projects col.col-3{ background: var(--col-3-bg); }
+
+/* (F) Footer */
+#projects tfoot td{
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* (G) Image placeholder block */
+.img-placeholder{
+  width: 160px;
+  height: 100px;
+  display: inline-grid;
+  place-items: center;
+  font: 600 0.85rem/1 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #6b7280;
+  background:
+    linear-gradient(135deg, #e5e7eb 25%, transparent 0) 0 0/20px 20px,
+    linear-gradient(135deg, transparent 75%, #e5e7eb 0) 0 0/20px 20px #f3f4f6;
+  border: 1px dashed #c4c7cc;
+  border-radius: 6px;
+  transition: transform var(--ease);
+}
+.img-placeholder:hover{
+  transform: scale(1.04);
+}
+
+/* (H) Section-specific hover lift for #projects */
+#projects{
+  padding-block: 8px 20px;
+}
+
     </section>
 
     <!-- Contact section -->
