@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio and project homepage for Kyana Garcia." />
   <meta name="keywords" content="portfolio, web development, projects, contact, Kyana Garcia" />
   <meta name="author" content="Kyana Garcia" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Kyana's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header with welcome message -->
+
+  <!-- Header -->
   <header>
     <h1>Welcome to My Web Portfolio!</h1>
   </header>
 
-  <!-- Navigation menu -->
-  <nav>
+  <!-- Primary navigation -->
+  <nav aria-label="Primary">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -25,63 +25,24 @@
     </ul>
   </nav>
 
-  <!-- Main content -->
   <main>
-    <!-- About section -->
+    <!-- About -->
     <section id="about">
       <h2>About</h2>
-      <p>Hello! My name is Kyana Garcia. I am currently studying web development and excited to finally be building new things on the web!</p>
+      <p>
+        Hello! My name is Kyana Garcia. I am currently studying web development and
+        excited to finally be building new things on the web!
+      </p>
     </section>
 
-    <!-- Projects section -->
+    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Portfolio and project homepage for Kyana Garcia." />
-  <meta name="keywords" content="portfolio, web development, projects, contact, Kyana Garcia" />
-  <meta name="author" content="Kyana Garcia" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Kyana's Portfolio</title>
-
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header with welcome message -->
-  <header>
-    <h1>Welcome to My Web Portfolio!</h1>
-  </header>
-
-  <!-- Navigation menu -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main content -->
-  <main>
-    <!-- About section -->
-    <section id="about">
-      <h2>About</h2>
-      <p>Hello! My name is Kyana Garcia. I am currently studying web development and excited to finally be building new things on the web!</p>
-    </section>
-
-    <!-- Projects section -->
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <!-- Project table -->
       <table>
         <caption>Sample Projects</caption>
 
-        <!-- Color specific columns -->
+        <!-- Color the 1st & 3rd columns via CSS -->
         <colgroup>
           <col class="col-1">
           <col>
@@ -90,9 +51,9 @@
 
         <thead>
           <tr>
-            <th scope="col">Project</th>
-            <th scope="col">Description</th>
-            <th scope="col">Preview</th>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Preview</th>
           </tr>
         </thead>
 
@@ -100,128 +61,38 @@
           <tr>
             <th scope="row">Weather Dash</th>
             <td>A small dashboard that fetches current conditions and a 5-day forecast for your city.</td>
-            <td><div class="img-placeholder">160×100</div></td>
+            <td><div class="img-placeholder" aria-hidden="true">160×100</div></td>
           </tr>
           <tr>
             <th scope="row">Task Tracker</th>
             <td>Kanban-style task board with drag-and-drop and local storage for persistence.</td>
-            <td><div class="img-placeholder">160×100</div></td>
+            <td><div class="img-placeholder" aria-hidden="true">160×100</div></td>
           </tr>
         </tbody>
 
         <tfoot>
           <tr>
-            <td colspan="3">More projects coming soon—stay tuned!</td>
+            <td colspan="3">More projects coming soon, stay tuned!</td>
           </tr>
         </tfoot>
       </table>
     </section>
 
-    <!-- Contact section -->
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>You can reach me at <a href="mailto:kyagar5135@students.ecpi.edu">kyagar5135@students.ecpi.edu</a>.</p>
+      <p>
+        You can reach me at
+        <a href="mailto:kyagar5135@students.ecpi.edu">kyagar5135@students.ecpi.edu</a>.
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Kyana Garcia. All rights reserved.
+    <p>&copy; 2025 Kyana Garcia. All rights reserved.</p>
   </footer>
-</body>
-</html>
 
-/* (C) Main sections: */
-main section{
-  transition: transform var(--ease), box-shadow var(--ease);
-  will-change: transform;
-}
-main section:hover{
-  transform: scale(var(--card-zoom));
-  box-shadow: 0 12px 28px rgba(0,0,0,.12);
-}
-
-/* (D) Table base styling */
-#projects table{
-  width: 100%;
-  border-collapse: collapse;
-  border: 2px solid var(--table-border);
-  background: #fff;
-  margin-block: 12px 24px;
-}
-#projects caption{
-  caption-side: top;
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-#projects thead{
-  background: var(--thead-bg);
-  color: #00323a;
-}
-#projects th,
-#projects td{
-  border: 1px solid var(--table-border);
-  padding: 10px 12px;
-  text-align: left;
-  vertical-align: top;
-  line-height: 1.4;
-}
-
-/* First column is the project name (bold) */
-#projects tbody th[scope="row"]{
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-#projects col.col-1{ background: var(--col-1-bg); }
-#projects col.col-3{ background: var(--col-3-bg); }
-
-/* (F) Footer */
-#projects tfoot td{
-  font-size: .9rem;
-  color: var(--muted);
-}
-
-/* (G) Image placeholder block */
-.img-placeholder{
-  width: 160px;
-  height: 100px;
-  display: inline-grid;
-  place-items: center;
-  font: 600 0.85rem/1 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color: #6b7280;
-  background:
-    linear-gradient(135deg, #e5e7eb 25%, transparent 0) 0 0/20px 20px,
-    linear-gradient(135deg, transparent 75%, #e5e7eb 0) 0 0/20px 20px #f3f4f6;
-  border: 1px dashed #c4c7cc;
-  border-radius: 6px;
-  transition: transform var(--ease);
-}
-.img-placeholder:hover{
-  transform: scale(1.04);
-}
-
-/* (H) Section-specific hover lift for #projects */
-#projects{
-  padding-block: 8px 20px;
-}
-
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at <a href="mailto:kyagar5135@students.ecpi.edu">kyagar5135@students.ecpi.edu</a>.</p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Kyana Garcia. All rights reserved.
-  </footer>
 </body>
 </html>
 
