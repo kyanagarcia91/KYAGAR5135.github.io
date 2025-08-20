@@ -185,3 +185,31 @@ nav ul {
   gap: 10px;
 }
 
+/* Form Styling */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  transition: border-color 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  border-color: #007BFF; /* highlight color on focus */
+}
+
+/* Submit button styling */
+#contact input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #0056b3; /* darker on hover */
+}
