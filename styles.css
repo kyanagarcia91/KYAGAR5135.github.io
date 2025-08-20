@@ -163,3 +163,25 @@ footer{
   padding:24px 10px 48px;
 }
 
+/* Flexbox layout for main content */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flexbox for nav menu */
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Flexbox for contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
