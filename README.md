@@ -19,7 +19,7 @@ It demonstrates responsive design, Flexbox layouts, media queries, and interacti
 I installed **XAMPP** and launched my project locally to simulate a production environment.  
 Here’s a screenshot of my project running on localhost with the timestamp:
 
-![Localhost Screenshot](screenshot.png)
+![Localhost Screenshot](Screenshot.png)
 
 ## Author
 - **Kyana Garcia**
