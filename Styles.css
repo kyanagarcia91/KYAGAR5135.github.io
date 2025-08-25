@@ -33,3 +33,26 @@ nav a:hover {
 main {
   padding: 20px;
 }
+
+/* Main blog layout */
+main {
+  display: flex;
+  flex-direction: column; /* stack vertically by default */
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto; /* centers the form */
+}
