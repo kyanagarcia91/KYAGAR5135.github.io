@@ -13,7 +13,7 @@ It demonstrates responsive design, Flexbox layouts, media queries, and interacti
 - Tested locally with **XAMPP**
 
 ## Live Demo
-🌐 View the hosted site here: [My GitHub Pages Site](https://kyagar5135.github.io/)
+🌐 View the hosted site here: [My GitHub Pages Site] (https://kyanagarcia91.github.io/KYAGAR5135.github.io/)
 
 ## Local Testing with XAMPP
 I installed **XAMPP** and launched my project locally to simulate a production environment.  
