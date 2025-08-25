@@ -56,3 +56,103 @@ article {
   max-width: 500px;
   margin: auto; /* centers the form */
 }
+
+/* Side-by-side layout for larger screens */
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row;   /* row instead of column */
+    align-items: flex-start;
+  }
+
+  article {
+    flex: 1;               /* each article takes equal space */
+    margin: 0 10px;
+  }
+}
+
+/* --------- Phones --------- */
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  article {
+    margin-bottom: 15px;
+  }
+}
+
+/* --------- Tablets --------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: column; /* still stacked */
+    padding: 20px;
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 600px; /* slightly wider form */
+  }
+}
+
+/* --------- Desktops --------- */
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row; /* side-by-side articles */
+    gap: 20px;
+  }
+
+  article {
+    flex: 1;
+    margin: 0;
+  }
+
+  form {
+    max-width: 500px; /* keep centered, not too wide */
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+article {
+  animation: fadeIn 1s ease-in both;
+}
+
+nav a {
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;  /* darker shade on hover */
+  color: #fff;
+}
+
+input, textarea {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #0a6;         /* highlight border */
+  background-color: #f0f8f5;  /* subtle background change */
+}
+
+button[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0a6;
+  color: #fff;
+}
